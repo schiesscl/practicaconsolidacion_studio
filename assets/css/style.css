@@ -1,0 +1,82 @@
+.progress {
+    width: 100%;
+}
+
+#skill-html, #skill-css, #skill-bootstrap, #skill-javascript, #skill-jquery, #skill-maven, #skill-mysql, #skill-springboot {
+    width: 0%;
+}
+
+#skill-html{
+    background-image: linear-gradient(to right, #E44D26 0%, #F16529 100%);
+}
+
+#skill-bootstrap{
+    background-color: #7B32FF;
+}
+
+#skill-mysql{
+    background-image: linear-gradient(to right, #00758F 0%, #F29111 100%);
+}
+
+#skill-java{
+    background-color: #E66F00;
+}
+
+#skill-maven{
+    background-image: linear-gradient(to right, #34326B 0%, #81297C 17%, #B32151 33%, #CD2137 50%, #E56C2C 66%, #F79825 100%);
+}
+
+.progress {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: glowing 2s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+}
+
+.navbar {
+    background-color: #00A0E8;
+}
+
+body {
+    background-image: linear-gradient(to right, #00A0E8, #ECA0BE);
+}
+
+.btn {
+    background-color: #4235e9; /* Color inicial */
+    color: #ffffff; /* Color del texto */
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+}
+
+.btn:hover {
+    background-color: #964fea; /* Color al acercar el puntero */
+    box-shadow: 0 0 20px #6f42ea; /* Sombra al acercar el puntero */
+}
+
+footer {
+    background-color: #ECA0BE;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%) brightness(100%);
+  }
+
+  footer img {
+    width: 30px; /* ajusta el ancho a 20px */
+    height: 30px; /* ajusta el alto a 20px */
+  }
+
+  .card-footer   img {
+    width: 25px; /* ajusta el ancho a 20px */
+    height: 25px; /* ajusta el alto a 20px */
+  }

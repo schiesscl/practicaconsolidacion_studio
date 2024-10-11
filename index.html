@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hans Schiess</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="text-white">
+    <nav class="navbar navbar-expand-lg text-white">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Hans Schiess</a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Content
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#presentacion">About Me</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#proyectos">Projects</a></li>
+                            <li><a class="dropdown-item" href="#habilidades">Skills</a></li>
+                            <li><a class="dropdown-item" href="#contacto">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="/index_es.html">ES</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold text-center">Portfolio</h1>
+            <h2 class="text-center">Hans Schiess</h2>
+            <p class="fs-4 text-center">Full Stack Java developer</p>
+        </div>
+    </header>
+
+    <main>
+        <div id="presentacion" class="container">
+            <h2 class="text-center">About Me</h2>
+            <p>
+                Full Stack Java developer with a solid foundation in web technologies
+                such as HTML, CSS and JavaScript, complemented with experience in
+                Bootstrap, MySQL, JQuery, Java and Spring Boot. My focus is on
+                creating efficient solutions to complex challenges.
+            </p>
+            <p>
+                My innate curiosity drives me to explore new technologies and
+                approaches, ensuring I stay current in a rapidly evolving environment.
+                Open-mindedness and adaptability are central to my approach to
+                development, allowing me to approach projects from diverse
+                perspectives and adjust to change with ease.
+            </p>
+            <p>
+                I emphasise analytical skills and critical thinking, applying a
+                meticulous approach at every stage of development. Persistence is one
+                of my greatest strengths, as I face challenges with determination
+                until I find effective solutions.
+            </p>
+            <p>
+                In short, I am a professional committed to continuous learning,
+                combining technical skills with an open mind and a strong work ethic.
+                I am enthusiastic about contributing to the success of challenging and
+                dynamic projects.
+            </p>
+            <p>I am also a surveyor technician.</p>
+        </div>
+
+        <div id="proyectos" class="container py-5">
+            <h2 class="text-center mb-3">Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <img src="assets/img/taskmaster.webp" class="card-img-top" alt="Imagen 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">Task Managing Application ("TaskMaster")</h5>
+                            <p class="card-text">TaskMaster is a web application that allows users to manage their daily tasks efficiently. <p>Users can create, update and delete tasks, as well as classify them into different categories. User authentication, advanced filters and push notifications have been implemented to remind users about pending tasks.</p> The application is built with Node.js and Express on the backend, and React on the frontend.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"><a href="#"><img src="assets/img/githubico.webp" alt="" class="githubico" aria-label="Github"></a></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <img src="assets/img/edulearn.webp" class="card-img-top" alt="Imagen 2" />
+                        <div class="card-body">
+                            <h5 class="card-title">Online Course Platform ("EduLearn")</h5>
+                            <p class="card-text">EduLearn is a web platform that offers online courses in various fields. <p>Users can register, enrol in courses, complete lessons and take exams. Administrators can add and manage courses, as well as view user participation statistics.</p> <p>The platform is developed with a MEAN stack (MongoDB, Express, Angular, Node.js) and uses JWT for user authentication.</p></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"><a href="#"><img src="assets/img/githubico.webp" alt="" class="githubico" aria-label="Github"></a></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <img src="assets/img/cookbook.webp" class="card-img-top" alt="Imagen 3" />
+                        <div class="card-body">
+                            <h5 class="card-title">Culinary Recipe Application ("CookBook")</h5>
+                            <p class="card-text">CookBook is a web application where users can search, save and share recipes. <p>Users can filter recipes by ingredients, category and difficulty. The application allows registered users to create and manage their own recipes, including photos and videos.</p> CookBook is built on a MERN architecture (MongoDB, Express, React, Node.js) and uses GraphQL for efficient queries.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"><a href="#"><img src="assets/img/githubico.webp" alt="" class="githubico" aria-label="Github"></a></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="habilidades" class="container py-5">
+            <h2 class="text-center">Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>HTML</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div id="skill-html" class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>CSS</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div id="skill-css" class="progress-bar bg-primary"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>Javascript</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div id="skill-javascript" class="progress-bar  bg-warning"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>Bootstrap</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div id="skill-bootstrap" class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>JQuery</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div id="skill-jquery" class="progress-bar bg-primary"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>MYSQL</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div id="skill-mysql" class="progress-bar bg-primary"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>Java</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div id="skill-java" class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>Spring Boot</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div id="skill-springboot" class="progress-bar bg-success"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>Maven</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div id="skill-maven" class="progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="contacto" class="py-5">
+            <div class="container">
+                <h2 class="text-center pb-5">Don't hestitate to contact me!</h2>
+                <div class="py-1">
+                    <form action="" class="w-75 mx-auto" id="form-contacto" method="post">
+                        <div>
+                            <label for="contacto-nombre" class="form-label">Name: </label>
+                            <input type="text" class="form-control" id="contacto-nombre" name="nombre"
+                                placeholder="Your name" required />
+                        </div>
+                        <div>
+                            <label for="contacto-asunto" class="form-label">Subject:
+                            </label>
+                            <input type="text" class="form-control" id="contacto-asunto" name="asunto"
+                                placeholder="Enter the subject" required />
+                        </div>
+                        <div>
+                            <label for="contacto-correo" class="form-label">Email: </label>
+                            <input type="email" class="form-control" id="contacto-correo" name="correo"
+                                placeholder="Your email" required />
+                        </div>
+                        <div>
+                            <label for="contacto-mensaje" class="form-label">Message:
+                            </label>
+                            <textarea name="mensaje" id="contacto-mensaje" class="form-control"
+                                placeholder="Enter your message" required></textarea>
+                        </div>
+                        <div class="py-3">
+                            <input type="submit" class="btn " data-bs-toggle="modal" value="Send"
+                                data-bs-target="#modalContacto"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-white text-center py-5">
+        <div><a href="https://github.com/schiesscl"><img src="assets/img/github.webp" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/hans-schiess"><img src="assets/img/linkedin.webp" alt="Linkedin"></a>
+            <a href="https://drive.google.com/file/d/1hJXMLaWR5URK-2jTcfiRGXt14kBRsPDl/view?usp=sharing"><img src="assets/img/resume.webp" alt="Resume"></a></div>
+        <div><p>Created in Temuco, Chile © 2024</p></div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalContacto" tabindex="-1" aria-labelledby="modalContactoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalContactoLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                        Ok
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script defer src="assets/js/script.js"></script>
+</body>
+
+</html>
