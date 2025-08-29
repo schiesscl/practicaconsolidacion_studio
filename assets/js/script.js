@@ -4,15 +4,20 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 // Establece el ancho de cada barra de progreso
 const habilidades = [
-    { id: 'skill-html', valor: 80 },
-    { id: 'skill-css', valor: 75 },
-    { id: 'skill-bootstrap', valor: 70 },
+    { id: 'skill-html', valor: 85 },
+    { id: 'skill-css', valor: 80 },
+    { id: 'skill-bootstrap', valor: 75 },
     { id: 'skill-javascript', valor : 70 },
-    { id: 'skill-jquery', valor: 60 },
+    { id: 'skill-jquery', valor: 65 },
     { id: 'skill-mysql', valor: 75 },
     { id: 'skill-java', valor: 60 },
     { id: 'skill-springboot', valor: 65 },
-    { id: 'skill-maven', valor: 65 }
+    { id: 'skill-maven', valor: 65 },
+    { id: 'skill-nodejs', valor: 55 },
+    { id: 'skill-expressjs', valor: 55 },
+    { id: 'skill-postgresql', valor: 65 },
+    { id: 'skill-python', valor: 50 },
+    { id: 'skill-react', valor: 35 }
 ];
 
 // Función para animar las barras de progreso
@@ -33,62 +38,23 @@ function animateProgress() {
 // Llama a la función para animar las barras de progreso cuando se carga la página
 window.onload = animateProgress;
 
-// Capturar formulario
-const formContacto = $("#form-contacto");
+// Esperar a que el DOM esté completamente cargado
+$(document).ready(function() {
+    // Capturar formulario
+    const formContacto = $("#form-contacto");
 
-// Capturar el contenedor donde se mostrará el mensaje de confirmación
-const mensajeConfirmacion = $("<p id='mensaje-confirmacion' style='color: green; font-weight: bold;'></p>");
-
-// Agregar el contenedor del mensaje de confirmación debajo del formulario
-formContacto.after(mensajeConfirmacion);
-
-$("#form-contacto").submit(function(event) {
-    event.preventDefault();
-
-    // Obtener los valores del formulario
-    var nombre = $("#contacto-nombre").val();
-    var asunto = $("#contacto-asunto").val();
-    var correo = $("#contacto-correo").val();
-    var mensaje = $("#contacto-mensaje").val();
-
-    // Obtener el idioma de la página
-    var idioma = document.documentElement.lang;
-
-    // Verificar la longitud de los campos
-    if (nombre.length < 8) {
-        var mensajeError = (idioma == "es") ? "El nombre debe tener al menos 8 caracteres." : "The name must be at least 8 characters long.";
-        var tituloError = (idioma == "es") ? "Error" : "Error";
-        $("#modalContacto .modal-title").text(tituloError);
-        $("#modalContacto .modal-body").text(mensajeError);
-        $("#modalContacto").modal("show");
-        return;
-    }
-
-    if (asunto.length < 8) {
-        var mensajeError = (idioma == "es") ? "El asunto debe tener al menos 8 caracteres." : "The subject must be at least 8 characters long.";
-        var tituloError = (idioma == "es") ? "Error" : "Error";
-        $("#modalContacto .modal-title").text(tituloError);
-        $("#modalContacto .modal-body").text(mensajeError);
-        $("#modalContacto").modal("show");
-        return;
-    }
-
-    if (mensaje.length < 15) {
-        var mensajeError = (idioma == "es") ? "El mensaje debe tener al menos 15 caracteres." : "The message must be at least 15 characters long.";
-        var tituloError = (idioma == "es") ? "Error" : "Error";
-        $("#modalContacto .modal-title").text(tituloError);
-        $("#modalContacto .modal-body").text(mensajeError);
-        $("#modalContacto").modal("show");
-        return;
-    }
-
-    // Mostrar mensaje de confirmación en el modal
-    var mensajeConfirmacionTexto = (idioma == "es") ? "Gracias! te contactaremos a la brevedad." : "Thank you! I will contact you soon.";
-    var tituloConfirmacion = (idioma == "es") ? "Mensaje Enviado" : "Message Sent";
-    $("#modalContacto .modal-title").text(tituloConfirmacion);
-    $("#modalContacto .modal-body").text(mensajeConfirmacionTexto);
-    $("#modalContacto").modal("show");
-
-    // Limpiar el formulario
-    $(this)[0].reset();
+    // Validación del formulario
+    $("#form-contacto").submit(function(event) {
+        var nombre = $("#contacto-nombre").val();
+        var asunto = $("#contacto-asunto").val();
+        var mensaje = $("#contacto-mensaje").val();
+        
+        // Validación básica
+        if (nombre.length < 8 || asunto.length < 8 || mensaje.length < 15) {
+            event.preventDefault();
+            alert("Por favor revisa los campos:\n- Nombre: mínimo 8 caracteres\n- Asunto: mínimo 8 caracteres\n- Mensaje: mínimo 15 caracteres");
+            return false;
+        }
+        return true;
+    });
 });

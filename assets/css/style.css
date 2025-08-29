@@ -2,7 +2,7 @@
     width: 100%;
 }
 
-#skill-html, #skill-css, #skill-bootstrap, #skill-javascript, #skill-jquery, #skill-maven, #skill-mysql, #skill-springboot {
+#skill-html, #skill-css, #skill-bootstrap, #skill-javascript, #skill-jquery, #skill-maven, #skill-mysql, #skill-springboot, #skill-nodejs, #skill-expressjs, #skill-postgresql, #skill-python, #skill-react {
     width: 0%;
 }
 
@@ -24,6 +24,26 @@
 
 #skill-maven{
     background-image: linear-gradient(to right, #34326B 0%, #81297C 17%, #B32151 33%, #CD2137 50%, #E56C2C 66%, #F79825 100%);
+}
+
+#skill-nodejs {
+    background-image: linear-gradient(to right, #68A063 0%, #3C873A 100%);
+}
+
+#skill-expressjs {
+    background-image: linear-gradient(to right, #000000 0%, #303030 100%);
+}
+
+#skill-postgresql {
+    background-image: linear-gradient(to right, #336791 0%, #0A4169 100%);
+}
+
+#skill-python {
+    background-image: linear-gradient(to right, #FFD43B 0%, #306998 100%);
+}
+
+#skill-react {
+    background-image: linear-gradient(to right, #61DAFB 0%, #00D8FF 100%);
 }
 
 .progress {
@@ -80,3 +100,23 @@ footer {
     width: 25px; /* ajusta el ancho a 20px */
     height: 25px; /* ajusta el alto a 20px */
   }
+
+  .card-img-top {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}

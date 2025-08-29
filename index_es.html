@@ -28,19 +28,19 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Contenido
+                            Content
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#presentacion">Sobre Mi</a>
+                                <a class="dropdown-item" href="#presentacion">About Me</a>
                             </li>
-                            <li><a class="dropdown-item" href="#proyectos">Proyectos</a></li>
-                            <li><a class="dropdown-item" href="#habilidades">Habilidades</a></li>
-                            <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
+                            <li><a class="dropdown-item" href="#proyectos">Projects</a></li>
+                            <li><a class="dropdown-item" href="#habilidades">Skills</a></li>
+                            <li><a class="dropdown-item" href="#contacto">Contact</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="https://schiesscl.github.io/practicaconsolidacion_studio/">EN</a>
+                        <a class="nav-link active text-white" aria-current="page" href="https://schiesscl.github.io/practicaconsolidacion_studio/index_es.html">ES</a>
                     </li>
                 </ul>
             </div>
@@ -49,17 +49,17 @@
 
     <header>
         <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold text-center">Portafolio</h1>
+            <h1 class="display-5 fw-bold text-center">Portfolio</h1>
             <h2 class="text-center">Hans Schiess</h2>
-            <p class="fs-4 text-center">Desarrollador Full Stack Java</p>
+            <p class="fs-4 text-center">Full Stack Java developer</p>
         </div>
     </header>
 
     <main>
         <div id="presentacion" class="container">
-            <h2 class="text-center">Sobre Mi</h2>
+            <h2 class="text-center">About Me</h2>
             <p>
-                Desarrollador Full Stack Java con una sólida base en tecnologías web como HTML, CSS y JavaScript, complementadas con experiencia en Bootstrap, MySQL, JQuery, Java y Spring Boot. Mi enfoque se centra en la creación de soluciones eficientes para desafíos complejos. 
+                Desarrollador Full Stack Java con una base en tecnologías web como HTML, CSS y JavaScript, complementadas con experiencia en Bootstrap, MySQL, JQuery, Java, Spring Boot Node.js, express.js, Python y React. Mi enfoque se centra en la creación de soluciones eficientes para desafíos complejos. 
             </p>
             <p>
                 Mi curiosidad innata me impulsa a explorar nuevas tecnologías y enfoques, asegurándome de mantenerme actualizado en un entorno que evoluciona rápidamente. La apertura mental y la adaptabilidad son fundamentales en mi enfoque de desarrollo, permitiéndome abordar proyectos desde diversas perspectivas y ajustarme a cambios con facilidad.
@@ -74,38 +74,33 @@
         </div>
 
         <div id="proyectos" class="container py-5">
-            <h2 class="text-center mb-3">Proyectos</h2>
+            <h2 class="text-center mb-3">Projects</h2>
             <div class="row">
-                <div class="col-md-4 mb-3">
+                <div class="col-md-6 mb-3">
                     <div class="card h-100">
-                        <img src="assets/img/taskmaster.webp" class="card-img-top" alt="Imagen 1" />
+                        <a href="https://culinaria-jobs.vercel.app/" class="card-img-link">
+                            <div class="card-img-wrapper">
+                                <img src="assets/img/culinariaJobs.png" class="card-img-top" alt="CulinariaJobs" />
+                            </div>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">Task Managing Application ("TaskMaster")</h5>
-                            <p class="card-text">TaskMaster es una aplicación web que permite a los usuarios gestionar sus tareas diarias de manera eficiente. <p>Los usuarios pueden crear, actualizar y eliminar tareas, así como clasificarlas en diferentes categorías. Se han implementado autenticación de usuarios, filtros avanzados y notificaciones push para recordar a los usuarios sobre tareas pendientes.</p> La aplicación está construida con Node.js y Express en el backend, y React en el frontend.</p>
+                            <h5 class="card-title">Aplicación de Búsqueda de Trabajo ("CulinariaJobs")</h5>
+                            <p class="card-text">Proyecto de simulación laboral para un sitio web dedicado al sector gastronómico, diseñado para facilitar la contratación de nuevos talentos e impulsar el éxito de los restaurantes. <p>Su principal servicio es la redacción de ofertas de empleo para cubrir las vacantes que necesitan los establecimientos, lo que permite a los usuarios registrados mostrar su interés en estas oportunidades. Si cumplen los requisitos, creamos un puente entre el usuario y el restaurante para facilitar la contratación.</p> La aplicación está construida con Spring Boot en el backend y React en el frontend, donde formé parte del equipo de frontend.</p>
                         </div>
                         <div class="card-footer">
-                            <small class="text-muted"><a href="#"><img src="assets/img/githubico.webp" alt="" class="githubico" aria-label="Github"></a></small>
+                            <small class="text-muted"><a href="https://culinaria-jobs.vercel.app/"><img src="assets/img/CJ.svg" alt="" class="culinariaJobsico" aria-label="CulinariaJobs"></a></small>
+                            <small class="text-muted"><a href="https://github.com/schiesscl/culinariaJobs"><img src="assets/img/githubico.webp" alt="" class="githubico" aria-label="Github"></a></small>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-6 mb-3">
                     <div class="card h-100">
-                        <img src="assets/img/edulearn.webp" class="card-img-top" alt="Imagen 2" />
-                        <div class="card-body">
-                            <h5 class="card-title">Online Course Platform ("EduLearn")</h5>
-                            <p class="card-text">EduLearn es una plataforma web que ofrece cursos online en diversos campos. <p>Los usuarios pueden registrarse, inscribirse en cursos, completar lecciones y realizar exámenes. Los administradores pueden añadir y gestionar cursos, así como ver estadísticas de participación de los usuarios.</p> La plataforma está desarrollada con un stack MEAN (MongoDB, Express, Angular, Node.js) y utiliza JWT para la autenticación de usuarios.</p>
+                        <div class="card-img-wrapper">
+                            <img src="assets/img/TBA.webp" class="card-img-top" alt="Under Construction" />
                         </div>
-                        <div class="card-footer">
-                            <small class="text-muted"><a href="#"><img src="assets/img/githubico.webp" alt="" class="githubico" aria-label="Github"></a></small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <img src="assets/img/cookbook.webp" class="card-img-top" alt="Imagen 3" />
                         <div class="card-body">
-                            <h5 class="card-title">Culinary Recipe Application ("CookBook")</h5>
-                            <p class="card-text">CookBook es una aplicación web donde los usuarios pueden buscar, guardar y compartir recetas de cocina. <p>Los usuarios pueden filtrar recetas por ingredientes, categoría y dificultad. La aplicación permite a los usuarios registrados crear y gestionar sus propias recetas, incluyendo fotos y videos.</p> CookBook está construida con una arquitectura MERN (MongoDB, Express, React, Node.js) y utiliza GraphQL para consultas eficientes.</p>
+                            <h5 class="card-title">Título PD</h5>
+                            <p class="card-text">Proyecto en construcción. <p>Lanzamiento 2025</p></p>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted"><a href="#"><img src="assets/img/githubico.webp" alt="" class="githubico" aria-label="Github"></a></small>
@@ -172,6 +167,36 @@
                         <div id="skill-maven" class="progress-bar"></div>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <h5>Node.JS</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div id="skill-nodejs" class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>Express.js</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div id="skill-expressjs" class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>PostgreSQL</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div id="skill-postgresql" class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>Python</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div id="skill-python" class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>React</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div id="skill-react" class="progress-bar"></div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -180,32 +205,31 @@
             <div class="container">
                 <h2 class="text-center pb-5">No dudes en contactarme!</h2>
                 <div class="py-1">
-                    <form action="" class="w-75 mx-auto" id="form-contacto" method="post">
+                    <form action="https://formspree.io/f/mandqroa" class="w-75 mx-auto" id="form-contacto" method="post">
                         <div>
                             <label for="contacto-nombre" class="form-label">Nombre: </label>
                             <input type="text" class="form-control" id="contacto-nombre" name="nombre"
-                                placeholder="Tu nombre" required />
+                                placeholder="Tu nombre" required autocomplete="on"/>
                         </div>
                         <div>
                             <label for="contacto-asunto" class="form-label">Asunto:
                             </label>
                             <input type="text" class="form-control" id="contacto-asunto" name="asunto"
-                                placeholder="Ingresa el asunto" required />
+                                placeholder="Ingresa el asunto" required autocomplete="on"/>
                         </div>
                         <div>
-                            <label for="contacto-correo" class="form-label">Correo Electrónico: </label>
+                            <label for="contacto-correo" class="form-label">Correo electrónico: </label>
                             <input type="email" class="form-control" id="contacto-correo" name="correo"
-                                placeholder="Tu correo" required />
+                                placeholder="Your email" required autocomplete="on"/>
                         </div>
                         <div>
                             <label for="contacto-mensaje" class="form-label">Mensaje:
                             </label>
-                            <textarea name="mensaje" id="contacto-mensaje" class="form-control"
-                                placeholder="Ingresa tu mensaje" required></textarea>
+                            <textarea name="message" id="contacto-mensaje" class="form-control"
+                                placeholder="Enter your message" required></textarea>
                         </div>
                         <div class="py-3">
-                            <input type="submit" class="btn " data-bs-toggle="modal" value="Enviar"
-                                data-bs-target="#modalContacto"/>
+                            <input type="submit" class="btn" value="Enviar" />
                         </div>
                     </form>
                 </div>
@@ -215,28 +239,10 @@
 
     <footer class="text-white text-center py-5">
         <div><a href="https://github.com/schiesscl"><img src="assets/img/github.webp" alt="Github"></a>
-            <a href="https://www.linkedin.com/in/hans-schiess/?locale=en_US"><img src="assets/img/linkedin.webp" alt="Linkedin"></a>
-            <a href="https://drive.google.com/file/d/1WUFOYF5cmtw8-jqU1CG9S6AbrlgfK_cf/view?usp=sharing"><img src="assets/img/resume.webp" alt="Resume"></a></div>
-        <div><p>Creado en Temuco, Chile © 2024</p></div>
+            <a href="https://www.linkedin.com/in/hans-schiess"><img src="assets/img/linkedin.webp" alt="Linkedin"></a>
+            <a href="https://drive.google.com/file/d/1hJXMLaWR5URK-2jTcfiRGXt14kBRsPDl/view?usp=sharing"><img src="assets/img/resume.webp" alt="Resume"></a></div>
+        <div><p>Created in Temuco, Chile © 2024</p></div>
     </footer>
-
-    <!-- Modal -->
-    <div class="modal fade" id="modalContacto" tabindex="-1" aria-labelledby="modalContactoLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalContactoLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
-                        Ok
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
